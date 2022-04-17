@@ -20,7 +20,13 @@ namespace WF_H_001
                 double.TryParse(YOCTB.Text, out double yoc) &&
                 double.TryParse(YOATB.Text, out double yoa) &&
                 double.TryParse(ZOATB.Text, out double zoa) &&
-                double.TryParse(LTB.Text, out double L))
+                double.TryParse(LTB.Text, out double L) &&
+                double.TryParse(ASTB.Text, out double as_) &&
+                double.TryParse(AETB.Text, out double ae) &&
+                double.TryParse(AITB.Text, out double ai) &&
+                double.TryParse(CSTB.Text, out double cs) &&
+                double.TryParse(CETB.Text, out double ce) &&
+                double.TryParse(CITB.Text, out double ci))
             {
                 var vo = new InputVo
                 {
@@ -31,7 +37,13 @@ namespace WF_H_001
                     yoc = yoc,
                     yoa = yoa,
                     zoa = zoa,
-                    L = L
+                    L = L,
+                    AS = as_,
+                    AE = ae,
+                    AI = ai,
+                    CS = cs,
+                    CE = ce,
+                    CI = ci,
                 };
                 var subForm = new SubForm(vo);
                 subForm.Show();
