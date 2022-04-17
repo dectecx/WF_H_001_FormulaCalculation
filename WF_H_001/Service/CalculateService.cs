@@ -12,8 +12,8 @@ namespace WF_H_001.Service
         {
             get => new double[3, 3]
             {
-                { Math.Cos(inputVo.CurrentC), Math.Sin(inputVo.CurrentC), 0 },
-                { -Math.Sin(inputVo.CurrentC), Math.Cos(inputVo.CurrentC), 0 },
+                { Math.Cos(Math.PI * inputVo.CurrentC / 180), Math.Sin(Math.PI * inputVo.CurrentC / 180), 0 },
+                { -Math.Sin(Math.PI * inputVo.CurrentC), Math.Cos(Math.PI * inputVo.CurrentC / 180), 0 },
                 { 0, 0, 1 }
             };
         }
@@ -22,8 +22,8 @@ namespace WF_H_001.Service
             get => new double[3, 3]
             {
                 { 1, 0, 0 },
-                { 0, Math.Cos(inputVo.CurrentA), Math.Sin(inputVo.CurrentA) },
-                { 0, -Math.Sin(inputVo.CurrentA), Math.Cos(inputVo.CurrentA) }
+                { 0, Math.Cos(Math.PI * inputVo.CurrentA / 180), Math.Sin(Math.PI * inputVo.CurrentA / 180) },
+                { 0, -Math.Sin(Math.PI * inputVo.CurrentA / 180), Math.Cos(Math.PI * inputVo.CurrentA / 180) }
             };
         }
         public double[,] P1
