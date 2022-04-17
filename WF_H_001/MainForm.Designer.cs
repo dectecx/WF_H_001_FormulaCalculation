@@ -62,19 +62,19 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.ASTB = new System.Windows.Forms.TextBox();
             this.AETB = new System.Windows.Forms.TextBox();
             this.AITB = new System.Windows.Forms.TextBox();
             this.CSTB = new System.Windows.Forms.TextBox();
             this.CETB = new System.Windows.Forms.TextBox();
             this.CITB = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -109,7 +109,7 @@
             this.XOCTB.Location = new System.Drawing.Point(48, 96);
             this.XOCTB.Name = "XOCTB";
             this.XOCTB.Size = new System.Drawing.Size(176, 25);
-            this.XOCTB.TabIndex = 35;
+            this.XOCTB.TabIndex = 14;
             // 
             // ZOATB
             // 
@@ -118,7 +118,7 @@
             this.ZOATB.Location = new System.Drawing.Point(48, 189);
             this.ZOATB.Name = "ZOATB";
             this.ZOATB.Size = new System.Drawing.Size(176, 25);
-            this.ZOATB.TabIndex = 33;
+            this.ZOATB.TabIndex = 17;
             // 
             // label5
             // 
@@ -138,7 +138,7 @@
             this.YOATB.Location = new System.Drawing.Point(48, 158);
             this.YOATB.Name = "YOATB";
             this.YOATB.Size = new System.Drawing.Size(176, 25);
-            this.YOATB.TabIndex = 31;
+            this.YOATB.TabIndex = 16;
             // 
             // Y1TB
             // 
@@ -147,7 +147,7 @@
             this.Y1TB.Location = new System.Drawing.Point(48, 34);
             this.Y1TB.Name = "Y1TB";
             this.Y1TB.Size = new System.Drawing.Size(176, 25);
-            this.Y1TB.TabIndex = 29;
+            this.Y1TB.TabIndex = 12;
             // 
             // label7
             // 
@@ -167,7 +167,7 @@
             this.Z1TB.Location = new System.Drawing.Point(48, 65);
             this.Z1TB.Name = "Z1TB";
             this.Z1TB.Size = new System.Drawing.Size(176, 25);
-            this.Z1TB.TabIndex = 27;
+            this.Z1TB.TabIndex = 13;
             // 
             // label6
             // 
@@ -187,7 +187,7 @@
             this.YOCTB.Location = new System.Drawing.Point(48, 127);
             this.YOCTB.Name = "YOCTB";
             this.YOCTB.Size = new System.Drawing.Size(176, 25);
-            this.YOCTB.TabIndex = 25;
+            this.YOCTB.TabIndex = 15;
             // 
             // label3
             // 
@@ -229,7 +229,7 @@
             this.X1TB.Location = new System.Drawing.Point(48, 3);
             this.X1TB.Name = "X1TB";
             this.X1TB.Size = new System.Drawing.Size(176, 25);
-            this.X1TB.TabIndex = 21;
+            this.X1TB.TabIndex = 11;
             // 
             // LTB
             // 
@@ -238,7 +238,7 @@
             this.LTB.Location = new System.Drawing.Point(48, 220);
             this.LTB.Name = "LTB";
             this.LTB.Size = new System.Drawing.Size(176, 25);
-            this.LTB.TabIndex = 19;
+            this.LTB.TabIndex = 18;
             // 
             // label23
             // 
@@ -508,16 +508,59 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(227, 441);
             this.tableLayoutPanel1.TabIndex = 56;
             // 
-            // label4
+            // ASTB
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.Location = new System.Drawing.Point(6, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 17);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "XOC";
+            this.ASTB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ASTB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.ASTB.Location = new System.Drawing.Point(48, 251);
+            this.ASTB.Name = "ASTB";
+            this.ASTB.Size = new System.Drawing.Size(176, 25);
+            this.ASTB.TabIndex = 19;
+            // 
+            // AETB
+            // 
+            this.AETB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AETB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.AETB.Location = new System.Drawing.Point(48, 282);
+            this.AETB.Name = "AETB";
+            this.AETB.Size = new System.Drawing.Size(176, 25);
+            this.AETB.TabIndex = 20;
+            // 
+            // AITB
+            // 
+            this.AITB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AITB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.AITB.Location = new System.Drawing.Point(48, 313);
+            this.AITB.Name = "AITB";
+            this.AITB.Size = new System.Drawing.Size(176, 25);
+            this.AITB.TabIndex = 21;
+            // 
+            // CSTB
+            // 
+            this.CSTB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CSTB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.CSTB.Location = new System.Drawing.Point(48, 344);
+            this.CSTB.Name = "CSTB";
+            this.CSTB.Size = new System.Drawing.Size(176, 25);
+            this.CSTB.TabIndex = 22;
+            // 
+            // CETB
+            // 
+            this.CETB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CETB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.CETB.Location = new System.Drawing.Point(48, 375);
+            this.CETB.Name = "CETB";
+            this.CETB.Size = new System.Drawing.Size(176, 25);
+            this.CETB.TabIndex = 23;
+            // 
+            // CITB
+            // 
+            this.CITB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CITB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.CITB.Location = new System.Drawing.Point(48, 409);
+            this.CITB.Name = "CITB";
+            this.CITB.Size = new System.Drawing.Size(176, 25);
+            this.CITB.TabIndex = 24;
             // 
             // label9
             // 
@@ -529,6 +572,17 @@
             this.label9.Size = new System.Drawing.Size(30, 17);
             this.label9.TabIndex = 57;
             this.label9.Text = "A-S";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.Location = new System.Drawing.Point(6, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 17);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "XOC";
             // 
             // label10
             // 
@@ -584,60 +638,6 @@
             this.label16.Size = new System.Drawing.Size(27, 17);
             this.label16.TabIndex = 62;
             this.label16.Text = "C-I";
-            // 
-            // ASTB
-            // 
-            this.ASTB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ASTB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.ASTB.Location = new System.Drawing.Point(48, 251);
-            this.ASTB.Name = "ASTB";
-            this.ASTB.Size = new System.Drawing.Size(176, 25);
-            this.ASTB.TabIndex = 57;
-            // 
-            // AETB
-            // 
-            this.AETB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AETB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.AETB.Location = new System.Drawing.Point(48, 282);
-            this.AETB.Name = "AETB";
-            this.AETB.Size = new System.Drawing.Size(176, 25);
-            this.AETB.TabIndex = 58;
-            // 
-            // AITB
-            // 
-            this.AITB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AITB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.AITB.Location = new System.Drawing.Point(48, 313);
-            this.AITB.Name = "AITB";
-            this.AITB.Size = new System.Drawing.Size(176, 25);
-            this.AITB.TabIndex = 59;
-            // 
-            // CSTB
-            // 
-            this.CSTB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CSTB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.CSTB.Location = new System.Drawing.Point(48, 344);
-            this.CSTB.Name = "CSTB";
-            this.CSTB.Size = new System.Drawing.Size(176, 25);
-            this.CSTB.TabIndex = 60;
-            // 
-            // CETB
-            // 
-            this.CETB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CETB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.CETB.Location = new System.Drawing.Point(48, 375);
-            this.CETB.Name = "CETB";
-            this.CETB.Size = new System.Drawing.Size(176, 25);
-            this.CETB.TabIndex = 61;
-            // 
-            // CITB
-            // 
-            this.CITB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CITB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.CITB.Location = new System.Drawing.Point(48, 409);
-            this.CITB.Name = "CITB";
-            this.CITB.Size = new System.Drawing.Size(176, 25);
-            this.CITB.TabIndex = 62;
             // 
             // MainForm
             // 
