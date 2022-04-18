@@ -13,7 +13,7 @@ namespace WF_H_001.Service
             get => new double[3, 3]
             {
                 { Math.Cos(Math.PI * inputVo.CurrentC / 180), Math.Sin(Math.PI * inputVo.CurrentC / 180), 0 },
-                { -Math.Sin(Math.PI * inputVo.CurrentC), Math.Cos(Math.PI * inputVo.CurrentC / 180), 0 },
+                { -Math.Sin(Math.PI * inputVo.CurrentC / 180), Math.Cos(Math.PI * inputVo.CurrentC / 180), 0 },
                 { 0, 0, 1 }
             };
         }

@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using WF_H_001.Models;
 using WF_H_001.Service;
 
@@ -89,9 +90,9 @@ namespace WF_H_001
             resultGV.Rows.Add();
             resultGV.Rows[index].Cells["AC"].Value = service.inputVo.CurrentA;
             resultGV.Rows[index].Cells["CC"].Value = service.inputVo.CurrentC;
-            resultGV.Rows[index].Cells["X2"].Value = service.P2[0, 0];
-            resultGV.Rows[index].Cells["Y2"].Value = service.P2[1, 0];
-            resultGV.Rows[index].Cells["Z2"].Value = service.P2[2, 0];
+            resultGV.Rows[index].Cells["X2"].Value = Math.Round(service.P2[0, 0], 4, MidpointRounding.AwayFromZero);
+            resultGV.Rows[index].Cells["Y2"].Value = Math.Round(service.P2[1, 0], 4, MidpointRounding.AwayFromZero);
+            resultGV.Rows[index].Cells["Z2"].Value = Math.Round(service.P2[2, 0], 4, MidpointRounding.AwayFromZero);
         }
     }
 }
