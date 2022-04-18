@@ -66,7 +66,7 @@ namespace WF_H_001.Service
         public double[,] P2 { get => GetP2(); }
         private double[,] GetP2()
         {
-            // var result = A * ((C * (P1 - (Q + S)) + (Q + S)) - M) + M;
+            // var result =        A * (       (C *       (P1 -   (Q + S)) +  (Q + S)) - M) + M;
             var result = Add(Multi(A, Sub(Multi(C, Add(Sub(P1, Add(Q, S)), Add(Q, S))), M)), M);
             return result;
         }
@@ -155,118 +155,4 @@ namespace WF_H_001.Service
             return product;
         }
     }
-
-    /*
-	public class Matrix2D
-	{
-		public int Row { get; set; }
-		public int Column { get; set; }
-		public double[,] Data { get; set; }
-
-		public double this[int row, int col]
-		{
-			get { return Data[row, col]; }
-			set { Data[row, col] = value; }
-		}
-
-		public Matrix2D(int row, int col)
-		{
-			Row = row;
-			Column = col;
-			Data = new double[row, col];
-
-			for (var i = 0; i < row; i++)
-			{
-				for (var j = 0; j < col; j++)
-				{
-					Data[i, j] = 0;
-				}
-			}
-		}
-
-		public static Matrix2D operator -(Matrix2D Left, Matrix2D Right)
-		{
-			var minus = new Matrix2D(Left.Row, Left.Column);
-
-			for (var i = 0; i < minus.Row; i++)
-			{
-				for (var j = 0; j < minus.Column; j++)
-				{
-					minus[i, j] = Left[i, j] - Right[i, j];
-				}
-			}
-
-			return minus;
-		}
-
-		public static Matrix2D operator +(Matrix2D Left, Matrix2D Right)
-		{
-			var sum = new Matrix2D(Left.Row, Left.Column);
-
-			for (var i = 0; i < sum.Row; i++)
-			{
-				for (var j = 0; j < sum.Column; j++)
-				{
-					sum[i, j] = Left[i, j] + Right[i, j];
-				}
-			}
-
-			return sum;
-		}
-
-		public static Matrix2D operator *(Matrix2D M, double Scalar)
-		{
-			var RM = new Matrix2D(M.Row, M.Column);
-
-			for (var i = 0; i < RM.Row; i++)
-			{
-				for (var j = 0; j < RM.Column; j++)
-				{
-					RM[i, j] = M[i, j] * Scalar;
-				}
-			}
-
-			return RM;
-		}
-
-		public static Matrix2D operator *(double Scalar, Matrix2D M)
-		{
-			var RM = new Matrix2D(M.Row, M.Column);
-
-			for (var i = 0; i < RM.Row; i++)
-			{
-				for (var j = 0; j < RM.Column; j++)
-				{
-					RM[i, j] = M[i, j] * Scalar;
-				}
-			}
-
-			return RM;
-		}
-
-		public static Matrix2D operator *(Matrix2D Left, Matrix2D Right)
-		{
-			if (Left.Column != Right.Row)
-			{
-				return null;
-			}
-
-			var product = new Matrix2D(Left.Row, Right.Column);
-
-			for (var i = 0; i < product.Row; i++)
-			{
-				for (var j = 0; j < product.Column; j++)
-				{
-					product[i, j] = 0;
-					for (int k = 0; k < Left.Column; k++)
-					{
-						product[i, j] += Left[i, k] * Right[k, j];
-					}
-				}
-			}
-
-			return product;
-		}
-	}
-	*/
 }

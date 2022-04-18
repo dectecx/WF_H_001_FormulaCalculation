@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using WF_H_001.Models;
 
@@ -6,6 +8,22 @@ namespace WF_H_001
 {
     public partial class MainForm : Form
     {
+        private List<double> X2List = new List<double>();
+        private List<double> Y2List = new List<double>();
+        private List<double> Z2List = new List<double>();
+        public void SetX2List(List<double> input)
+        {
+            X2List = input;
+        }
+        public void SetY2List(List<double> input)
+        {
+            Y2List = input;
+        }
+        public void SetZ2List(List<double> input)
+        {
+            Z2List = input;
+        }
+
         public MainForm()
         {
             InitializeComponent();
@@ -59,7 +77,7 @@ namespace WF_H_001
                     CE = ce,
                     CI = ci,
                 };
-                var subForm = new SubForm(vo);
+                var subForm = new SubForm(this, vo);
                 subForm.Show();
             }
             else
@@ -67,6 +85,28 @@ namespace WF_H_001
                 MessageBox.Show("輸入內容有誤，請確認是否皆為數值");
                 return;
             }
+        }
+
+        private void ShowTmpBtn_Click(object sender, EventArgs e)
+        {
+            bool isX2 = X2RB.Checked;
+            bool isY2 = Y2RB.Checked;
+            bool isZ2 = Z2RB.Checked;
+            string msg;
+            if (isX2)
+                msg = "X2：" + JsonConvert.SerializeObject(X2List);
+            else if (isY2)
+                msg = "Y2：" + JsonConvert.SerializeObject(Y2List);
+            else if (isZ2)
+                msg = "Z2：" + JsonConvert.SerializeObject(Z2List);
+            else
+            {
+                msg = "X2：" + JsonConvert.SerializeObject(X2List) + "\n"
+                    + "Y2：" + JsonConvert.SerializeObject(Y2List) + "\n"
+                    + "Z2：" + JsonConvert.SerializeObject(Z2List);
+            }
+
+            MessageBox.Show(msg);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using WF_H_001.Models;
 using WF_H_001.Service;
@@ -7,11 +8,13 @@ namespace WF_H_001
 {
     public partial class SubForm : Form
     {
+        private readonly MainForm _mainForm;
         private readonly InputVo _vo;
 
-        public SubForm(InputVo vo)
+        public SubForm(MainForm mainForm, InputVo vo)
         {
             InitializeComponent();
+            _mainForm = mainForm;
             _vo = vo;
         }
 
@@ -25,6 +28,9 @@ namespace WF_H_001
                 inputVo = _vo
             };
             int index = 0;
+            List<double> x2List = new List<double>();
+            List<double> y2List = new List<double>();
+            List<double> z2List = new List<double>();
             if (service.inputVo.AI > 0)
             {
                 if (service.inputVo.CI > 0)
@@ -36,6 +42,9 @@ namespace WF_H_001
                         {
                             service.inputVo.CurrentC = cc;
                             AddGrid(resultGV, service, index);
+                            x2List.Add(service.P2[0, 0]);
+                            y2List.Add(service.P2[1, 0]);
+                            z2List.Add(service.P2[2, 0]);
                             index++;
                         }
                     }
@@ -49,6 +58,9 @@ namespace WF_H_001
                         {
                             service.inputVo.CurrentC = cc;
                             AddGrid(resultGV, service, index);
+                            x2List.Add(service.P2[0, 0]);
+                            y2List.Add(service.P2[1, 0]);
+                            z2List.Add(service.P2[2, 0]);
                             index++;
                         }
                     }
@@ -65,6 +77,9 @@ namespace WF_H_001
                         {
                             service.inputVo.CurrentC = cc;
                             AddGrid(resultGV, service, index);
+                            x2List.Add(service.P2[0, 0]);
+                            y2List.Add(service.P2[1, 0]);
+                            z2List.Add(service.P2[2, 0]);
                             index++;
                         }
                     }
@@ -78,11 +93,17 @@ namespace WF_H_001
                         {
                             service.inputVo.CurrentC = cc;
                             AddGrid(resultGV, service, index);
+                            x2List.Add(service.P2[0, 0]);
+                            y2List.Add(service.P2[1, 0]);
+                            z2List.Add(service.P2[2, 0]);
                             index++;
                         }
                     }
                 }
             }
+            _mainForm.SetX2List(x2List);
+            _mainForm.SetY2List(y2List);
+            _mainForm.SetZ2List(z2List);
         }
 
         private void AddGrid(DataGridView resultGV, CalculateService service, int index)

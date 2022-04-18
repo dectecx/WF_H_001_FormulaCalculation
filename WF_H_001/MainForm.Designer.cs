@@ -75,16 +75,23 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.ShowTmpBtn = new System.Windows.Forms.Button();
+            this.X2RB = new System.Windows.Forms.RadioButton();
+            this.Y2RB = new System.Windows.Forms.RadioButton();
+            this.Z2RB = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.XYZRB = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // StartBtn
             // 
             this.StartBtn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.StartBtn.Location = new System.Drawing.Point(175, 612);
-            this.StartBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartBtn.Margin = new System.Windows.Forms.Padding(4);
             this.StartBtn.Name = "StartBtn";
             this.StartBtn.Size = new System.Drawing.Size(137, 29);
             this.StartBtn.TabIndex = 18;
@@ -109,7 +116,7 @@
             this.XOCTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.XOCTB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.XOCTB.Location = new System.Drawing.Point(65, 122);
-            this.XOCTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.XOCTB.Margin = new System.Windows.Forms.Padding(4);
             this.XOCTB.Name = "XOCTB";
             this.XOCTB.Size = new System.Drawing.Size(233, 29);
             this.XOCTB.TabIndex = 14;
@@ -119,7 +126,7 @@
             this.ZOATB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ZOATB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.ZOATB.Location = new System.Drawing.Point(65, 239);
-            this.ZOATB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ZOATB.Margin = new System.Windows.Forms.Padding(4);
             this.ZOATB.Name = "ZOATB";
             this.ZOATB.Size = new System.Drawing.Size(233, 29);
             this.ZOATB.TabIndex = 17;
@@ -141,7 +148,7 @@
             this.YOATB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.YOATB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.YOATB.Location = new System.Drawing.Point(65, 200);
-            this.YOATB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.YOATB.Margin = new System.Windows.Forms.Padding(4);
             this.YOATB.Name = "YOATB";
             this.YOATB.Size = new System.Drawing.Size(233, 29);
             this.YOATB.TabIndex = 16;
@@ -151,7 +158,7 @@
             this.Y1TB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Y1TB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Y1TB.Location = new System.Drawing.Point(65, 44);
-            this.Y1TB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Y1TB.Margin = new System.Windows.Forms.Padding(4);
             this.Y1TB.Name = "Y1TB";
             this.Y1TB.Size = new System.Drawing.Size(233, 29);
             this.Y1TB.TabIndex = 12;
@@ -173,7 +180,7 @@
             this.Z1TB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Z1TB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Z1TB.Location = new System.Drawing.Point(65, 83);
-            this.Z1TB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Z1TB.Margin = new System.Windows.Forms.Padding(4);
             this.Z1TB.Name = "Z1TB";
             this.Z1TB.Size = new System.Drawing.Size(233, 29);
             this.Z1TB.TabIndex = 13;
@@ -195,7 +202,7 @@
             this.YOCTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.YOCTB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.YOCTB.Location = new System.Drawing.Point(65, 161);
-            this.YOCTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.YOCTB.Margin = new System.Windows.Forms.Padding(4);
             this.YOCTB.Name = "YOCTB";
             this.YOCTB.Size = new System.Drawing.Size(233, 29);
             this.YOCTB.TabIndex = 15;
@@ -241,7 +248,7 @@
             this.X1TB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.X1TB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.X1TB.Location = new System.Drawing.Point(65, 5);
-            this.X1TB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.X1TB.Margin = new System.Windows.Forms.Padding(4);
             this.X1TB.Name = "X1TB";
             this.X1TB.Size = new System.Drawing.Size(233, 29);
             this.X1TB.TabIndex = 11;
@@ -251,7 +258,7 @@
             this.LTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LTB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.LTB.Location = new System.Drawing.Point(65, 278);
-            this.LTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LTB.Margin = new System.Windows.Forms.Padding(4);
             this.LTB.Name = "LTB";
             this.LTB.Size = new System.Drawing.Size(233, 29);
             this.LTB.TabIndex = 18;
@@ -441,7 +448,7 @@
             this.panel1.Controls.Add(this.label51);
             this.panel1.Controls.Add(this.label50);
             this.panel1.Location = new System.Drawing.Point(341, 54);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(552, 388);
             this.panel1.TabIndex = 55;
@@ -466,7 +473,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label23, 3, 2);
             this.tableLayoutPanel2.Controls.Add(this.Slabel, 2, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(27, 128);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -522,7 +529,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label13, 0, 12);
             this.tableLayoutPanel1.Controls.Add(this.label16, 0, 13);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 54);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 14;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142858F));
@@ -547,7 +554,7 @@
             this.ASTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ASTB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.ASTB.Location = new System.Drawing.Point(65, 317);
-            this.ASTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ASTB.Margin = new System.Windows.Forms.Padding(4);
             this.ASTB.Name = "ASTB";
             this.ASTB.Size = new System.Drawing.Size(233, 29);
             this.ASTB.TabIndex = 19;
@@ -557,7 +564,7 @@
             this.AETB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AETB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.AETB.Location = new System.Drawing.Point(65, 356);
-            this.AETB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AETB.Margin = new System.Windows.Forms.Padding(4);
             this.AETB.Name = "AETB";
             this.AETB.Size = new System.Drawing.Size(233, 29);
             this.AETB.TabIndex = 20;
@@ -567,7 +574,7 @@
             this.AITB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AITB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.AITB.Location = new System.Drawing.Point(65, 395);
-            this.AITB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AITB.Margin = new System.Windows.Forms.Padding(4);
             this.AITB.Name = "AITB";
             this.AITB.Size = new System.Drawing.Size(233, 29);
             this.AITB.TabIndex = 21;
@@ -577,7 +584,7 @@
             this.CSTB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CSTB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.CSTB.Location = new System.Drawing.Point(65, 434);
-            this.CSTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CSTB.Margin = new System.Windows.Forms.Padding(4);
             this.CSTB.Name = "CSTB";
             this.CSTB.Size = new System.Drawing.Size(233, 29);
             this.CSTB.TabIndex = 22;
@@ -587,7 +594,7 @@
             this.CETB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CETB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.CETB.Location = new System.Drawing.Point(65, 473);
-            this.CETB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CETB.Margin = new System.Windows.Forms.Padding(4);
             this.CETB.Name = "CETB";
             this.CETB.Size = new System.Drawing.Size(233, 29);
             this.CETB.TabIndex = 23;
@@ -597,7 +604,7 @@
             this.CITB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CITB.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.CITB.Location = new System.Drawing.Point(65, 514);
-            this.CITB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CITB.Margin = new System.Windows.Forms.Padding(4);
             this.CITB.Name = "CITB";
             this.CITB.Size = new System.Drawing.Size(233, 29);
             this.CITB.TabIndex = 24;
@@ -686,16 +693,85 @@
             this.label16.TabIndex = 62;
             this.label16.Text = "C-I";
             // 
+            // ShowTmpBtn
+            // 
+            this.ShowTmpBtn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.ShowTmpBtn.Location = new System.Drawing.Point(7, 32);
+            this.ShowTmpBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.ShowTmpBtn.Name = "ShowTmpBtn";
+            this.ShowTmpBtn.Size = new System.Drawing.Size(113, 68);
+            this.ShowTmpBtn.TabIndex = 57;
+            this.ShowTmpBtn.Text = "顯示暫存值";
+            this.ShowTmpBtn.UseVisualStyleBackColor = true;
+            this.ShowTmpBtn.Click += new System.EventHandler(this.ShowTmpBtn_Click);
+            // 
+            // X2RB
+            // 
+            this.X2RB.AutoSize = true;
+            this.X2RB.Location = new System.Drawing.Point(129, 32);
+            this.X2RB.Name = "X2RB";
+            this.X2RB.Size = new System.Drawing.Size(45, 19);
+            this.X2RB.TabIndex = 58;
+            this.X2RB.Text = "X2";
+            this.X2RB.UseVisualStyleBackColor = true;
+            // 
+            // Y2RB
+            // 
+            this.Y2RB.AutoSize = true;
+            this.Y2RB.Location = new System.Drawing.Point(129, 58);
+            this.Y2RB.Name = "Y2RB";
+            this.Y2RB.Size = new System.Drawing.Size(45, 19);
+            this.Y2RB.TabIndex = 59;
+            this.Y2RB.Text = "Y2";
+            this.Y2RB.UseVisualStyleBackColor = true;
+            // 
+            // Z2RB
+            // 
+            this.Z2RB.AutoSize = true;
+            this.Z2RB.Location = new System.Drawing.Point(129, 83);
+            this.Z2RB.Name = "Z2RB";
+            this.Z2RB.Size = new System.Drawing.Size(44, 19);
+            this.Z2RB.TabIndex = 60;
+            this.Z2RB.Text = "Z2";
+            this.Z2RB.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.XYZRB);
+            this.groupBox1.Controls.Add(this.X2RB);
+            this.groupBox1.Controls.Add(this.ShowTmpBtn);
+            this.groupBox1.Controls.Add(this.Z2RB);
+            this.groupBox1.Controls.Add(this.Y2RB);
+            this.groupBox1.Location = new System.Drawing.Point(341, 456);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(241, 138);
+            this.groupBox1.TabIndex = 61;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "顯示暫存";
+            // 
+            // XYZRB
+            // 
+            this.XYZRB.AutoSize = true;
+            this.XYZRB.Checked = true;
+            this.XYZRB.Location = new System.Drawing.Point(129, 108);
+            this.XYZRB.Name = "XYZRB";
+            this.XYZRB.Size = new System.Drawing.Size(88, 19);
+            this.XYZRB.TabIndex = 61;
+            this.XYZRB.TabStop = true;
+            this.XYZRB.Text = "X2-Y2-Z2";
+            this.XYZRB.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(924, 656);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.StartBtn);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -704,6 +780,8 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -757,6 +835,12 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button ShowTmpBtn;
+        private System.Windows.Forms.RadioButton X2RB;
+        private System.Windows.Forms.RadioButton Y2RB;
+        private System.Windows.Forms.RadioButton Z2RB;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton XYZRB;
     }
 }
 
