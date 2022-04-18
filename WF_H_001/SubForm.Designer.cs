@@ -29,75 +29,97 @@
         private void InitializeComponent()
         {
             this.CalBtn = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.ResultGV = new System.Windows.Forms.DataGridView();
+            this.AC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.X2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Y2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Z2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultGV)).BeginInit();
             this.SuspendLayout();
             // 
             // CalBtn
             // 
-            this.CalBtn.Location = new System.Drawing.Point(12, 12);
+            this.CalBtn.Location = new System.Drawing.Point(16, 15);
+            this.CalBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CalBtn.Name = "CalBtn";
-            this.CalBtn.Size = new System.Drawing.Size(75, 23);
+            this.CalBtn.Size = new System.Drawing.Size(100, 29);
             this.CalBtn.TabIndex = 0;
             this.CalBtn.Text = "計算";
             this.CalBtn.UseVisualStyleBackColor = true;
             this.CalBtn.Click += new System.EventHandler(this.CalBtn_Click);
             // 
-            // dataGridView1
+            // ResultGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 397);
-            this.dataGridView1.TabIndex = 23;
+            this.ResultGV.AllowUserToAddRows = false;
+            this.ResultGV.AllowUserToDeleteRows = false;
+            this.ResultGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AC,
+            this.CC,
+            this.X2,
+            this.Y2,
+            this.Z2});
+            this.ResultGV.Location = new System.Drawing.Point(16, 51);
+            this.ResultGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ResultGV.Name = "ResultGV";
+            this.ResultGV.ReadOnly = true;
+            this.ResultGV.RowHeadersWidth = 51;
+            this.ResultGV.RowTemplate.Height = 24;
+            this.ResultGV.Size = new System.Drawing.Size(1035, 496);
+            this.ResultGV.TabIndex = 23;
             // 
-            // Column1
+            // AC
             // 
-            this.Column1.HeaderText = "A軸角度";
-            this.Column1.Name = "Column1";
+            this.AC.HeaderText = "A軸角度";
+            this.AC.MinimumWidth = 6;
+            this.AC.Name = "AC";
+            this.AC.ReadOnly = true;
+            this.AC.Width = 125;
             // 
-            // Column2
+            // CC
             // 
-            this.Column2.HeaderText = "C軸角度";
-            this.Column2.Name = "Column2";
+            this.CC.HeaderText = "C軸角度";
+            this.CC.MinimumWidth = 6;
+            this.CC.Name = "CC";
+            this.CC.ReadOnly = true;
+            this.CC.Width = 125;
             // 
-            // Column3
+            // X2
             // 
-            this.Column3.HeaderText = "X";
-            this.Column3.Name = "Column3";
+            this.X2.HeaderText = "X";
+            this.X2.MinimumWidth = 6;
+            this.X2.Name = "X2";
+            this.X2.ReadOnly = true;
+            this.X2.Width = 125;
             // 
-            // Column4
+            // Y2
             // 
-            this.Column4.HeaderText = "Y";
-            this.Column4.Name = "Column4";
+            this.Y2.HeaderText = "Y";
+            this.Y2.MinimumWidth = 6;
+            this.Y2.Name = "Y2";
+            this.Y2.ReadOnly = true;
+            this.Y2.Width = 125;
             // 
-            // Column5
+            // Z2
             // 
-            this.Column5.HeaderText = "Z";
-            this.Column5.Name = "Column5";
+            this.Z2.HeaderText = "Z";
+            this.Z2.MinimumWidth = 6;
+            this.Z2.Name = "Z2";
+            this.Z2.ReadOnly = true;
+            this.Z2.Width = 125;
             // 
             // SubForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1067, 562);
+            this.Controls.Add(this.ResultGV);
             this.Controls.Add(this.CalBtn);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SubForm";
             this.Text = "SubForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -105,11 +127,11 @@
         #endregion
 
         private System.Windows.Forms.Button CalBtn;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridView ResultGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn X2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Y2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Z2;
     }
 }

@@ -9,6 +9,20 @@ namespace WF_H_001
         public MainForm()
         {
             InitializeComponent();
+            X1TB.Text = "-12";
+            Y1TB.Text = "58";
+            Z1TB.Text = "-150";
+            XOCTB.Text = "0.06";
+            YOCTB.Text = "-0.013";
+            YOATB.Text = "0.0015";
+            ZOATB.Text = "-530";
+            LTB.Text = "150";
+            ASTB.Text = "0";
+            AETB.Text = "-30";
+            AITB.Text = "-15";
+            CSTB.Text = "0";
+            CETB.Text = "360";
+            CITB.Text = "30";
         }
 
         private void StartBtn_Click(object sender, EventArgs e)
