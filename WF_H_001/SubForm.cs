@@ -42,9 +42,7 @@ namespace WF_H_001
                         {
                             service.inputVo.CurrentC = cc;
                             AddGrid(resultGV, service, index);
-                            x2List.Add(service.P2[0, 0]);
-                            y2List.Add(service.P2[1, 0]);
-                            z2List.Add(service.P2[2, 0]);
+                            AddTmpList(service, x2List, y2List, z2List);
                             index++;
                         }
                     }
@@ -58,9 +56,7 @@ namespace WF_H_001
                         {
                             service.inputVo.CurrentC = cc;
                             AddGrid(resultGV, service, index);
-                            x2List.Add(service.P2[0, 0]);
-                            y2List.Add(service.P2[1, 0]);
-                            z2List.Add(service.P2[2, 0]);
+                            AddTmpList(service, x2List, y2List, z2List);
                             index++;
                         }
                     }
@@ -77,9 +73,7 @@ namespace WF_H_001
                         {
                             service.inputVo.CurrentC = cc;
                             AddGrid(resultGV, service, index);
-                            x2List.Add(service.P2[0, 0]);
-                            y2List.Add(service.P2[1, 0]);
-                            z2List.Add(service.P2[2, 0]);
+                            AddTmpList(service, x2List, y2List, z2List);
                             index++;
                         }
                     }
@@ -93,9 +87,7 @@ namespace WF_H_001
                         {
                             service.inputVo.CurrentC = cc;
                             AddGrid(resultGV, service, index);
-                            x2List.Add(service.P2[0, 0]);
-                            y2List.Add(service.P2[1, 0]);
-                            z2List.Add(service.P2[2, 0]);
+                            AddTmpList(service, x2List, y2List, z2List);
                             index++;
                         }
                     }
@@ -104,6 +96,13 @@ namespace WF_H_001
             _mainForm.SetX2List(x2List);
             _mainForm.SetY2List(y2List);
             _mainForm.SetZ2List(z2List);
+        }
+
+        private static void AddTmpList(CalculateService service, List<double> x2List, List<double> y2List, List<double> z2List)
+        {
+            x2List.Add(Math.Round(service.P2[0, 0], 4, MidpointRounding.AwayFromZero));
+            y2List.Add(Math.Round(service.P2[1, 0], 4, MidpointRounding.AwayFromZero));
+            z2List.Add(Math.Round(service.P2[2, 0], 4, MidpointRounding.AwayFromZero));
         }
 
         private void AddGrid(DataGridView resultGV, CalculateService service, int index)
