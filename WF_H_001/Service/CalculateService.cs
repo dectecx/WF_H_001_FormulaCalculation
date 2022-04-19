@@ -66,8 +66,8 @@ namespace WF_H_001.Service
         public double[,] P2 { get => GetP2(); }
         private double[,] GetP2()
         {
-            // var result =        A * (       (C *       (P1 -   (Q + S)) +  (Q + S)) - M) + M;
-            var result = Add(Multi(A, Sub(Multi(C, Add(Sub(P1, Add(Q, S)), Add(Q, S))), M)), M);
+            // var result =        A * (           (C *   (P1 -   (Q + S)) +  (Q + S)) - M) + M;
+            var result = Add(Multi(A, Sub(Add(Multi(C, Sub(P1, Add(Q, S))), Add(Q, S)), M)), M);
             return result;
         }
 
