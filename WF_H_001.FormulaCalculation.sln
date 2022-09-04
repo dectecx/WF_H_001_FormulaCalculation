@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF_H_001", "WF_H_001\WF_H_001.csproj", "{97512FF7-AF31-4D8B-8B2F-5BB56AC284A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF_H_001.FormulaCalculation", "WF_H_001\WF_H_001.FormulaCalculation.csproj", "{97512FF7-AF31-4D8B-8B2F-5BB56AC284A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

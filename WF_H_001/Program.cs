@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WF_H_001
+namespace WF_H_001.FormulaCalculation
 {
     internal static class Program
     {

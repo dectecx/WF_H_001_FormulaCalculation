@@ -1,4 +1,4 @@
-﻿namespace WF_H_001.Models
+﻿namespace WF_H_001.FormulaCalculation.Models
 {
     public class InputVo
     {

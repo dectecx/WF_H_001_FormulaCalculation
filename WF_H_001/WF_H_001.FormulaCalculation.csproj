@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{97512FF7-AF31-4D8B-8B2F-5BB56AC284A9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WF_H_001</RootNamespace>
-    <AssemblyName>WF_H_001</AssemblyName>
+    <RootNamespace>WF_H_001.FormulaCalculation</RootNamespace>
+    <AssemblyName>WF_H_001.FormulaCalculation</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -76,6 +76,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SubForm.resx">
       <DependentUpon>SubForm.cs</DependentUpon>

@@ -1,4 +1,4 @@
-﻿namespace WF_H_001
+﻿namespace WF_H_001.FormulaCalculation
 {
     partial class SubForm
     {

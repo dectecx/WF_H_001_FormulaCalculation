@@ -1,7 +1,7 @@
 ﻿using System;
-using WF_H_001.Models;
+using WF_H_001.FormulaCalculation.Models;
 
-namespace WF_H_001.Service
+namespace WF_H_001.FormulaCalculation.Service
 {
     public class CalculateService
     {

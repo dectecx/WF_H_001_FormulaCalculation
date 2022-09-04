@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using WF_H_001.Models;
+using WF_H_001.FormulaCalculation.Models;
 
-namespace WF_H_001
+namespace WF_H_001.FormulaCalculation
 {
     public partial class MainForm : Form
     {
